@@ -1,13 +1,196 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+nav {
+  padding: 0 1rem;
+}
+.content {
+  min-height: calc(100vh - 70px - 64px);
+  padding: 1.5rem 8rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.wrapper .meal-img {
+  width: 35%;
+}
+
+.meal-img img {
+  width: 100%;
+}
+
+.meal-img a {
+  cursor: pointer;
+}
+
+.recipe {
+  width: 60%;
+}
+
+.card-content {
+  flex-grow: 1;
+}
+
+h3.card-title {
+  margin: 0;
+}
+
+.strRecipe {
+  width: 100%;
+  margin: 0;
+}
+.strRecipe p {
+  font-size: 18px;
+}
+
+.strRecipe p span {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.meal {
+  position: relative;
+}
+
+.btn-back {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+@media (min-width: 0) and (max-width: 468px) {
+  .content {
+    padding: 1rem 2rem;
+  }
+  .card {
+    width: 90%;
+  }
+
+  .card-action a button {
+    font-size: 12px;
+  }
+
+  .wrapper .meal-img,
+  .wrapper .recipe {
+    width: 100%;
+  }
+  .row {
+    margin-top: 30px;
+  }
+  .btn-back {
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 468.1px) and (max-width: 600px) {
+  .content {
+    padding: 1rem 5rem;
+  }
+  .card {
+    width: 90%;
+  }
+
+  .card-action a button {
+    font-size: 80%;
+  }
+
+  .wrapper {
+    justify-content: start;
+    padding: 1rem;
+  }
+
+  .wrapper .meal-img,
+  .wrapper .recipe {
+    width: 100%;
+  }
+  .row {
+    margin-top: 30px;
+  }
+  .btn-back {
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 600.1px) and (max-width: 800px) {
+  .content {
+    padding: 1rem 2rem;
+  }
+  .card {
+    width: 45%;
+  }
+}
+
+@media (min-width: 800.1px) and (max-width: 1200px) {
+  .content {
+    padding: 1rem 4rem;
+  }
+  .card {
+    width: 30%;
+  }
+}
+
+@media (min-width: 600.1px) and (max-width: 700px) {
+  .wrapper .meal-img {
+    width: 65%;
+  }
+  .wrapper .recipe {
+    width: 100%;
+  }
+  .row {
+    margin-top: 30px;
+  }
+  .btn-back {
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 700.1px) and (max-width: 800px) {
+  .wrapper {
+    padding: 1rem 1.5rem;
+  }
+  .wrapper .meal-img {
+    width: 60%;
+  }
+  .wrapper .recipe {
+    width: 100%;
+  }
+  .row {
+    margin-top: 30px;
+  }
+  .btn-back {
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 800.1px) and (max-width: 900px) {
+  .wrapper .meal-img {
+    width: 50%;
+  }
+  .wrapper .recipe {
+    width: 100%;
+  }
+  .row {
+    margin-top: 30px;
+  }
+  .btn-back {
+    right: 0;
+    bottom: 0;
+  }
 }
